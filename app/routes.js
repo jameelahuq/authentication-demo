@@ -38,7 +38,7 @@ module.exports = function(app, passport) {
             failureFlash : true // allow flash messages
         }));
 
-        // SIGNUP =================================
+        // SIGNUP =====================================
         // show the signup form
         app.get('/signup', function(req, res) {
             res.render('signup.ejs', { message: req.flash('signupMessage') });
